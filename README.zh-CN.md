@@ -67,6 +67,28 @@ model.safetensors.index.json
 
 其中 `.safetensors` 大文件已被 `.gitignore` 排除，不会进入仓库。
 
+## 关于官方 `wheel/` 目录
+
+百度官方仓库中有一个 `wheel/` 目录，里面放的是 SGLang 路线使用的本地安装包，例如：
+
+```text
+wheel/sglang-0.0.0.dev11416+g92e8bb79e-py3-none-any.whl
+```
+
+这个文件只在走官方 SGLang 推理路线时需要。本适配仓库当前使用的是：
+
+```text
+Transformers + torch_npu + FastAPI
+```
+
+因此，已验证的昇腾 NPU 服务不依赖这个 SGLang wheel。
+
+为了让仓库保持轻量，`wheel/` 被有意排除在本仓库之外。如果后续需要尝试官方 SGLang 路线，可以从百度官方仓库下载：
+
+```text
+https://github.com/baidu/Unlimited-OCR/tree/main/wheel
+```
+
 ## 启动 NPU 服务
 
 示例启动命令：

@@ -54,6 +54,27 @@ model.safetensors.index.json
 
 The large `.safetensors` file is ignored by git.
 
+## About the Official `wheel/` Directory
+
+The upstream Baidu repository contains a `wheel/` directory with a local SGLang
+wheel, for example:
+
+```text
+wheel/sglang-0.0.0.dev11416+g92e8bb79e-py3-none-any.whl
+```
+
+That file is used only when running the official SGLang inference path. This NPU
+adaptation uses `Transformers + torch_npu + FastAPI`, so the SGLang wheel is not
+required for the tested Ascend NPU service.
+
+For that reason, `wheel/` is intentionally excluded from this repository. If you
+want to try the upstream SGLang route, download the wheel from the official
+Baidu repository:
+
+```text
+https://github.com/baidu/Unlimited-OCR/tree/main/wheel
+```
+
 ## NPU Service
 
 Example startup inside the Ascend test container:

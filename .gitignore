@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.log
+.cache/
+._____temp/
+.msc
+.mv
+
+# Model weights and large artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+wheel/
+
+# Data and generated benchmark outputs
+benchmarks/OCRBench/
+server_output/
+server_output_gpu_params/
+test_output/
+outputs/
+
+# Local test files
+test_input.png

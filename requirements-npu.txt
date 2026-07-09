@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+pandas
+pillow
+transformers
+safetensors
+torch
+torch_npu

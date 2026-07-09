@@ -1,0 +1,68 @@
+{
+  "samples": 76,
+  "exact": 49,
+  "exact_acc": 0.6447,
+  "contains": 49,
+  "contains_acc": 0.6447,
+  "avg_seconds": 0.805,
+  "total_seconds": 62.024,
+  "request_params": {
+    "prompt": "<image>document parsing.",
+    "base_size": 1024,
+    "image_size": 640,
+    "crop_mode": true,
+    "max_length": 4096,
+    "no_repeat_ngram_size": 35,
+    "ngram_window": 128
+  },
+  "by_dataset": {
+    "IC13_857": {
+      "samples": 18,
+      "exact": 13,
+      "exact_acc": 0.7222,
+      "contains": 13,
+      "contains_acc": 0.7222,
+      "avg_seconds": 0.813
+    },
+    "IC15_1811": {
+      "samples": 8,
+      "exact": 4,
+      "exact_acc": 0.5,
+      "contains": 4,
+      "contains_acc": 0.5,
+      "avg_seconds": 0.733
+    },
+    "IIIT5K": {
+      "samples": 15,
+      "exact": 10,
+      "exact_acc": 0.6667,
+      "contains": 10,
+      "contains_acc": 0.6667,
+      "avg_seconds": 0.896
+    },
+    "ct80": {
+      "samples": 9,
+      "exact": 6,
+      "exact_acc": 0.6667,
+      "contains": 6,
+      "contains_acc": 0.6667,
+      "avg_seconds": 0.791
+    },
+    "svt": {
+      "samples": 17,
+      "exact": 13,
+      "exact_acc": 0.7647,
+      "contains": 13,
+      "contains_acc": 0.7647,
+      "avg_seconds": 0.785
+    },
+    "svtp": {
+      "samples": 9,
+      "exact": 3,
+      "exact_acc": 0.3333,
+      "contains": 3,
+      "contains_acc": 0.3333,
+      "avg_seconds": 0.755
+    }
+  }
+}

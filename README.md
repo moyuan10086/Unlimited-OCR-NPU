@@ -1,5 +1,7 @@
 # Unlimited-OCR Ascend NPU Adaptation
 
+[中文说明](README.zh-CN.md)
+
 This repository contains an Ascend NPU adaptation and benchmark harness for
 `baidu/Unlimited-OCR`.
 
